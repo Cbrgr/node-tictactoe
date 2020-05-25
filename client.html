@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Morpion NodeJS</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="main.js"></script>	
+	</head>
+	<body>
+		Status du serveur: <span id="status"></span><br />
+		
+		
+		<div class="container">
+		  <div class="menu">
+			<h1>Morpion.js</h1>
+			<h3>Comment jouer</h3>
+			<ol>
+			  <li>Joueur 1: Créé une nouvelle partie en entrant son nom sous "Nouvelle partie"</li>
+			  <li>Joueur 2: Rejoins la partie en entrant son nom sous "Rejoindre la partie"</li>
+			</ol>
+			<h4>Nouvelle partie</h4>
+			<input type="text" name="name" id="nameNew" placeholder="Entrez votre nom" required>
+			<button id="new">Nouvelle partie</button>
+			<br><br>
+			<div id="joinTheGame">
+				<h4>Rejoindre la partie</h4>
+				<input type="text" name="name" id="nameJoin" placeholder="Entrez votre nom" required>
+				<button id="join">Rejoindre la partie</button>
+			</div>
+		  </div>
+		</div>
+		<div class="">
+			<h2 id="userHello"></h2>
+		</div>
+		
+		<div class="gameBoard">  
+		  <h3 id="turn"></h3>
+		  <table class="center">
+			<tr>
+			  <td><button class="tile" id="button_00"></button></td>
+			  <td><button class="tile" id="button_01"></button></td>
+			  <td><button class="tile" id="button_02"></button></td>
+			</tr>
+			<tr>
+			  <td><button class="tile" id="button_10"></button></td>
+			  <td><button class="tile" id="button_11"></button></td>
+			  <td><button class="tile" id="button_12"></button></td>
+			</tr>
+			<tr>
+			  <td><button class="tile" id="button_20"></button></td>
+			  <td><button class="tile" id="button_21"></button></td>
+			  <td><button class="tile" id="button_22"></button></td>
+			</tr>
+		  </table>
+		</div>
+		
+	</body>
+</html>
