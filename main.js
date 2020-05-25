@@ -71,7 +71,7 @@ var handleServerMessage = function(event){
 	if (msg.type == 'gameEnded') {
 		var data = JSON.parse(msg.content); 
 		alert(data.message);
-		
+		$('.gameBoard').addClass('is-ended')
 	}
 };
   

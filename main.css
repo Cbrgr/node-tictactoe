@@ -11,6 +11,10 @@
 .gameBoard {
 	display: none;
 }
+.gameBoard.is-ended .tile {
+	background-color: #ddd;
+	pointer-events: none;
+}
 
 .greeting{
 	display: none;
